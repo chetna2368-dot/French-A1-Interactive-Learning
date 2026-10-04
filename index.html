@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>French A1 Adventure</title>
+    <meta
+      name="description"
+      content="Interactive French A1 revision game for beginner learners with audio, quizzes, games, and speaking challenges."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <div class="brand-badge">🇫🇷</div>
+          <span>French A1 Adventure</span>
+        </div>
+        <nav class="nav">
+          <a href="#alphabet">Alphabet</a>
+          <a href="#numbers">Nombres</a>
+          <a href="#days">Jours</a>
+          <a href="#greetings">Salutations</a>
+          <a href="#verbs">Verbes</a>
+          <a href="#games">Jeux</a>
+          <a href="#final">Défi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero panel">
+        <div>
+          <p class="eyebrow">A1 • Révision • Quiz • Jeux</p>
+          <h1>Bonjour ! <span>Apprenons le français</span></h1>
+          <p class="lead">
+            Un cours ludique, coloré et facile pour revoir l’alphabet, les nombres, les jours,
+            les salutations, les verbes et les introductions.
+          </p>
+          <div class="tag-row">
+            <span class="tag pink">🎯 A1</span>
+            <span class="tag yellow">🧠 Quiz</span>
+            <span class="tag green">🎧 Audio</span>
+            <span class="tag blue">✨ Fun</span>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="speech-bubble">Bonjour ! Comment ça va ?</div>
+          <div class="avatar">
+            <div class="face"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="alphabet" class="section panel">
+        <div class="section-head">
+          <h2>📚 L’alphabet</h2>
+          <span class="pill">Quiz</span>
+        </div>
+        <div id="alphabetQuiz" class="card-grid"></div>
+      </section>
+
+      <section id="numbers" class="section panel">
+        <div class="section-head">
+          <h2>🔢 Les nombres 0–100</h2>
+          <span class="pill">Révision</span>
+        </div>
+        <div class="mini-card">
+          <h3>Référence rapide</h3>
+          <div id="numberChart" class="number-chart"></div>
+        </div>
+        <div id="numberQuiz" class="card-grid"></div>
+      </section>
+
+      <section id="days" class="section panel">
+        <div class="section-head">
+          <h2>📅 Les jours de la semaine</h2>
+          <span class="pill">Ordre</span>
+        </div>
+        <div id="daysQuiz" class="card-grid"></div>
+      </section>
+
+      <section id="months" class="section panel">
+        <div class="section-head">
+          <h2>🗓️ Les mois de l’année</h2>
+          <span class="pill">Ordre</span>
+        </div>
+        <div id="monthsQuiz" class="card-grid"></div>
+      </section>
+
+      <section id="greetings" class="section panel">
+        <div class="section-head">
+          <h2>👋 Les salutations</h2>
+          <span class="pill">Formel / Informel</span>
+        </div>
+        <div id="greetingsQuiz" class="card-grid"></div>
+      </section>
+
+      <section id="verbs" class="section panel">
+        <div class="section-head">
+          <h2>🧑‍🏫 Les verbes</h2>
+          <span class="pill">Être • Avoir • S’appeler</span>
+        </div>
+        <div id="verbsQuiz" class="card-grid"></div>
+      </section>
+
+      <section class="section panel">
+        <div class="section-head">
+          <h2>👤 Introduction</h2>
+          <span class="pill">Dialogue</span>
+        </div>
+
+        <div class="dialogue-box">
+          <div class="msg left">Bonjour ! Comment vous appelez-vous ?</div>
+          <div class="msg right">Bonjour ! Je m’appelle Emma. Et vous ?</div>
+          <div class="msg left">Je m’appelle Lucas. Enchanté !</div>
+          <div class="msg right">Enchantée !</div>
+        </div>
+
+        <div id="introQuiz" class="card-grid"></div>
+      </section>
+
+      <section class="section panel">
+        <div class="section-head">
+          <h2>🌍 Personal information</h2>
+          <span class="pill">Qui es-tu ?</span>
+        </div>
+        <div id="personalQuiz" class="card-grid"></div>
+      </section>
+
+      <section class="section panel">
+        <div class="section-head">
+          <h2>🎂 Âge et date de naissance</h2>
+          <span class="pill">A1</span>
+        </div>
+        <div id="ageQuiz" class="card-grid"></div>
+      </section>
+
+      <section class="section panel">
+        <div class="section-head">
+          <h2>📱 Numéro de téléphone</h2>
+          <span class="pill">Pratique</span>
+        </div>
+        <div id="phoneQuiz" class="card-grid"></div>
+      </section>
+
+      <section class="section panel">
+        <div class="section-head">
+          <h2>💼 Profession</h2>
+          <span class="pill">Métier</span>
+        </div>
+        <div id="jobQuiz" class="card-grid"></div>
+      </section>
+
+      <section class="section panel">
+        <div class="section-head">
+          <h2>💍 Mariage et famille</h2>
+          <span class="pill">Vie</span>
+        </div>
+        <div id="familyQuiz" class="card-grid"></div>
+      </section>
+
+      <section id="games" class="section panel">
+        <div class="section-head">
+          <h2>🎮 Jeux rapides</h2>
+          <span class="pill">Fun</span>
+        </div>
+
+        <div class="games-grid">
+          <div class="mini-card">
+            <h3>🎡 Roue du hasard</h3>
+            <div class="wheel-wrap">
+              <div id="wheel" class="wheel">
+                <div class="wheel-center">?</div>
+              </div>
+              <button id="spinWheel" class="primary-btn">Jouer</button>
+            </div>
+            <div id="wheelResult" class="result-mini">Clique sur Jouer !</div>
+          </div>
+
+          <div class="mini-card">
+            <h3>🕵️ Qui suis-je ?</h3>
+            <div id="whoAmI" class="who-box"></div>
+          </div>
+
+          <div class="mini-card">
+            <h3>🧩 Construis la phrase</h3>
+            <div id="sentenceBuilder" class="sentence-builder"></div>
+          </div>
+
+          <div class="mini-card">
+            <h3>🚨 Correct ou incorrect ?</h3>
+            <div id="correctIncorrect" class="correct-incorrect"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="final" class="section panel final-panel">
+        <div class="section-head">
+          <h2>🎤 Défi final</h2>
+          <span class="pill">Présente-toi</span>
+        </div>
+
+        <div class="final-box">
+          <h3>Présente-toi !</h3>
+          <p>
+            Bonjour ! Je m’appelle ______. Je viens de ______. J’ai ______ ans. Je suis ______.
+            Je suis ______. Mon numéro de téléphone est ______.
+          </p>
+        </div>
+
+        <div id="finalQuiz" class="card-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">🌟 Bon courage ! Parle, écoute et amuse-toi ! 🌟</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
