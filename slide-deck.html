@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>French A1 - Slide Deck Edition</title>
+  <link rel="stylesheet" href="slide-deck.css" />
+</head>
+<body>
+  <div class="presentation">
+    <!-- Navigation -->
+    <nav class="slide-nav">
+      <div class="nav-inner">
+        <button id="prevBtn" class="nav-btn prev-btn">← Précédent</button>
+        <div class="progress">
+          <span id="slideCounter">1</span> / <span id="totalSlides">1</span>
+        </div>
+        <button id="nextBtn" class="nav-btn next-btn">Suivant →</button>
+      </div>
+      <div class="nav-info">
+        <span id="slideTitle" class="slide-title-info">Bienvenue</span>
+      </div>
+    </nav>
+
+    <!-- Slides Container -->
+    <div class="slides-container">
+      <!-- Slide 1: Title -->
+      <section class="slide" data-slide-num="1">
+        <div class="slide-content slide-title-slide">
+          <div class="title-art">
+            <div class="emoji-large">🇫🇷</div>
+          </div>
+          <h1>French A1 Adventure</h1>
+          <p class="subtitle">Révision Interactive • Quiz • Jeux • Audio</p>
+          <div class="cta-buttons">
+            <button class="cta-btn" onclick="nextSlide()">Commencer →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 2: Learning Objectives -->
+      <section class="slide" data-slide-num="2">
+        <div class="slide-content">
+          <h1>📚 Objectifs d'apprentissage</h1>
+          <div class="objectives">
+            <div class="obj-item">✓ L'alphabet français</div>
+            <div class="obj-item">✓ Les nombres 0-100</div>
+            <div class="obj-item">✓ Les jours et les mois</div>
+            <div class="obj-item">✓ Les salutations formelles et informelles</div>
+            <div class="obj-item">✓ Les verbes être, avoir, s'appeler</div>
+            <div class="obj-item">✓ Faire une présentation personnelle</div>
+            <div class="obj-item">✓ Parler de soi (âge, nationalité, profession)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 3: Alphabet Introduction -->
+      <section class="slide" data-slide-num="3">
+        <div class="slide-content">
+          <h1>📖 L'alphabet français</h1>
+          <p class="slide-intro">Il y a 26 lettres en français, comme en anglais.</p>
+          <div class="alphabet-grid">
+            <span class="letter">A</span><span class="letter">B</span><span class="letter">C</span>
+            <span class="letter">D</span><span class="letter">E</span><span class="letter">F</span>
+            <span class="letter">G</span><span class="letter">H</span><span class="letter">I</span>
+            <span class="letter">J</span><span class="letter">K</span><span class="letter">L</span>
+            <span class="letter">M</span><span class="letter">N</span><span class="letter">O</span>
+            <span class="letter">P</span><span class="letter">Q</span><span class="letter">R</span>
+            <span class="letter">S</span><span class="letter">T</span><span class="letter">U</span>
+            <span class="letter">V</span><span class="letter">W</span><span class="letter">X</span>
+            <span class="letter">Y</span><span class="letter">Z</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4: Alphabet Quiz 1 -->
+      <section class="slide" data-slide-num="4">
+        <div class="slide-content quiz-slide">
+          <h1>❓ Quelle est cette lettre ?</h1>
+          <div class="quiz-letter">B</div>
+          <div class="quiz-options">
+            <button class="quiz-btn" onclick="checkAnswer(this, 'Bé')">A. Bé</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'Cé')">B. Cé</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'Dé')">C. Dé</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'Effe')">D. Effe</button>
+          </div>
+          <div id="quiz-result" class="quiz-result"></div>
+          <button class="audio-btn-slide" onclick="speakSlide('Bé')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 5: Alphabet Quiz 2 -->
+      <section class="slide" data-slide-num="5">
+        <div class="slide-content quiz-slide">
+          <h1>❓ Quelle est cette lettre ?</h1>
+          <div class="quiz-letter">M</div>
+          <div class="quiz-options">
+            <button class="quiz-btn" onclick="checkAnswer(this, 'Emme')">A. Emme</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'Esse')">B. Esse</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'O')">C. O</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'Té')">D. Té</button>
+          </div>
+          <div id="quiz-result" class="quiz-result"></div>
+          <button class="audio-btn-slide" onclick="speakSlide('Emme')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 6: Numbers Intro -->
+      <section class="slide" data-slide-num="6">
+        <div class="slide-content">
+          <h1>🔢 Les nombres 0-100</h1>
+          <div class="number-chart-slide">
+            <div class="num-row">
+              <span class="num-item">0 zéro</span>
+              <span class="num-item">1 un</span>
+              <span class="num-item">2 deux</span>
+              <span class="num-item">3 trois</span>
+              <span class="num-item">4 quatre</span>
+            </div>
+            <div class="num-row">
+              <span class="num-item">5 cinq</span>
+              <span class="num-item">10 dix</span>
+              <span class="num-item">20 vingt</span>
+              <span class="num-item">50 cinquante</span>
+              <span class="num-item">100 cent</span>
+            </div>
+          </div>
+          <p class="tip">💡 Les nombres composés utilisent un tiret (-) : 21 = vingt et un, 42 = quarante-deux</p>
+        </div>
+      </section>
+
+      <!-- Slide 7: Numbers Quiz -->
+      <section class="slide" data-slide-num="7">
+        <div class="slide-content quiz-slide">
+          <h1>❓ Comment dit-on 42 ?</h1>
+          <div class="quiz-options">
+            <button class="quiz-btn" onclick="checkAnswer(this, 'quarante-deux')">A. quarante-deux</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'soixante-deux')">B. soixante-deux</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'vingt-deux')">C. vingt-deux</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'quarante-cinq')">D. quarante-cinq</button>
+          </div>
+          <div id="quiz-result" class="quiz-result"></div>
+          <button class="audio-btn-slide" onclick="speakSlide('quarante-deux')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 8: Days of the Week -->
+      <section class="slide" data-slide-num="8">
+        <div class="slide-content">
+          <h1>📅 Les jours de la semaine</h1>
+          <div class="days-display">
+            <div class="day-box">lundi</div>
+            <div class="day-box">mardi</div>
+            <div class="day-box">mercredi</div>
+            <div class="day-box">jeudi</div>
+            <div class="day-box">vendredi</div>
+            <div class="day-box weekend">samedi</div>
+            <div class="day-box weekend">dimanche</div>
+          </div>
+          <button class="audio-btn-slide" onclick="speakSlide('lundi mardi mercredi jeudi vendredi samedi dimanche')">🔊 Écoute tous les jours</button>
+        </div>
+      </section>
+
+      <!-- Slide 9: Days Quiz -->
+      <section class="slide" data-slide-num="9">
+        <div class="slide-content quiz-slide">
+          <h1>❓ Quel jour vient après mercredi ?</h1>
+          <div class="quiz-options">
+            <button class="quiz-btn" onclick="checkAnswer(this, 'jeudi')">A. jeudi</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'mardi')">B. mardi</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'vendredi')">C. vendredi</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'dimanche')">D. dimanche</button>
+          </div>
+          <div id="quiz-result" class="quiz-result"></div>
+          <button class="audio-btn-slide" onclick="speakSlide('jeudi')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 10: Months -->
+      <section class="slide" data-slide-num="10">
+        <div class="slide-content">
+          <h1>🗓️ Les mois de l'année</h1>
+          <div class="months-display">
+            <div class="month-box">janvier</div>
+            <div class="month-box">février</div>
+            <div class="month-box">mars</div>
+            <div class="month-box">avril</div>
+            <div class="month-box">mai</div>
+            <div class="month-box">juin</div>
+            <div class="month-box">juillet</div>
+            <div class="month-box">août</div>
+            <div class="month-box">septembre</div>
+            <div class="month-box">octobre</div>
+            <div class="month-box">novembre</div>
+            <div class="month-box">décembre</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 11: Greetings Intro -->
+      <section class="slide" data-slide-num="11">
+        <div class="slide-content">
+          <h1>👋 Les salutations</h1>
+          <div class="greeting-grid">
+            <div class="greeting-box formal">
+              <h3>Formel</h3>
+              <p>Bonjour</p>
+              <p>Bonsoir</p>
+              <p>Au revoir</p>
+              <p>Comment allez-vous ?</p>
+            </div>
+            <div class="greeting-box informal">
+              <h3>Informel</h3>
+              <p>Salut !</p>
+              <p>Ça va ?</p>
+              <p>À bientôt !</p>
+              <p>À plus !</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 12: Greetings Quiz -->
+      <section class="slide" data-slide-num="12">
+        <div class="slide-content quiz-slide">
+          <h1>❓ Formel ou informel ?</h1>
+          <div class="greeting-question">« Salut ! »</div>
+          <div class="quiz-options">
+            <button class="quiz-btn" onclick="checkAnswer(this, 'Informel')">A. Informel</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'Formel')">B. Formel</button>
+          </div>
+          <div id="quiz-result" class="quiz-result"></div>
+          <button class="audio-btn-slide" onclick="speakSlide('Salut')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 13: Verbs Intro -->
+      <section class="slide" data-slide-num="13">
+        <div class="slide-content">
+          <h1>🧑‍🏫 Les verbes essentiels</h1>
+          <div class="verb-intro">
+            <p>Trois verbes très importants en français :</p>
+            <div class="verb-list">
+              <div class="verb-item">
+                <h3>ÊTRE (to be)</h3>
+                <p>Je suis, Tu es, Il est</p>
+              </div>
+              <div class="verb-item">
+                <h3>AVOIR (to have)</h3>
+                <p>J'ai, Tu as, Il a</p>
+              </div>
+              <div class="verb-item">
+                <h3>S'APPELER (to be called)</h3>
+                <p>Je m'appelle, Tu t'appelles, Il s'appelle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 14: Verbs Quiz - Être -->
+      <section class="slide" data-slide-num="14">
+        <div class="slide-content quiz-slide">
+          <h1>❓ Je ___ français.</h1>
+          <div class="quiz-options">
+            <button class="quiz-btn" onclick="checkAnswer(this, 'suis')">A. suis</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'es')">B. es</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'est')">C. est</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'sont')">D. sont</button>
+          </div>
+          <div id="quiz-result" class="quiz-result"></div>
+          <button class="audio-btn-slide" onclick="speakSlide('Je suis français')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 15: Verbs Quiz - Avoir -->
+      <section class="slide" data-slide-num="15">
+        <div class="slide-content quiz-slide">
+          <h1>❓ J'___ 15 ans.</h1>
+          <div class="quiz-options">
+            <button class="quiz-btn" onclick="checkAnswer(this, 'ai')">A. ai</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'as')">B. as</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'suis')">C. suis</button>
+            <button class="quiz-btn" onclick="checkAnswer(this, 'est')">D. est</button>
+          </div>
+          <div id="quiz-result" class="quiz-result"></div>
+          <button class="audio-btn-slide" onclick="speakSlide('J'ai quinze ans')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 16: Introduction Model -->
+      <section class="slide" data-slide-num="16">
+        <div class="slide-content">
+          <h1>👤 Un exemple d'introduction</h1>
+          <div class="dialogue-box">
+            <div class="dialogue-line left">
+              <span class="speaker">A:</span>
+              <span>Bonjour ! Comment vous appelez-vous ?</span>
+            </div>
+            <div class="dialogue-line right">
+              <span class="speaker">B:</span>
+              <span>Bonjour ! Je m'appelle Emma. Et vous ?</span>
+            </div>
+            <div class="dialogue-line left">
+              <span class="speaker">A:</span>
+              <span>Je m'appelle Lucas. Enchanté !</span>
+            </div>
+            <div class="dialogue-line right">
+              <span class="speaker">B:</span>
+              <span>Enchantée !</span>
+            </div>
+          </div>
+          <button class="audio-btn-slide" onclick="speakSlide('Bonjour comment vous appelez vous')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 17: Personal Info - Name -->
+      <section class="slide" data-slide-num="17">
+        <div class="slide-content">
+          <h1>💬 Comment tu t'appelles ?</h1>
+          <div class="info-box">
+            <h3>Question:</h3>
+            <p class="question">« Comment tu t'appelles ? »</p>
+            <h3 style="margin-top: 20px;">Réponse:</h3>
+            <p class="answer">« Je m'appelle Emma. »</p>
+          </div>
+          <button class="audio-btn-slide" onclick="speakSlide('Je m'appelle Emma')">🔊 Écoute la réponse</button>
+        </div>
+      </section>
+
+      <!-- Slide 18: Personal Info - Where from -->
+      <section class="slide" data-slide-num="18">
+        <div class="slide-content">
+          <h1>🌍 Tu viens d'où ?</h1>
+          <div class="info-box">
+            <h3>Question:</h3>
+            <p class="question">« Tu viens d'où ? »</p>
+            <h3 style="margin-top: 20px;">Réponse:</h3>
+            <p class="answer">« Je viens de France. »</p>
+            <p class="answer">« Je viens du Canada. »</p>
+            <p class="answer">« Je viens d'Allemagne. »</p>
+          </div>
+          <button class="audio-btn-slide" onclick="speakSlide('Je viens de France')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 19: Age & Birthday -->
+      <section class="slide" data-slide-num="19">
+        <div class="slide-content">
+          <h1>🎂 Âge et date de naissance</h1>
+          <div class="info-box">
+            <h3>« Quel âge as-tu ? »</h3>
+            <p class="answer">« J'ai 15 ans. »</p>
+            <p class="tip">⚠️ En français, on utilise AVOIR pour l'âge, pas ÊTRE !</p>
+            <h3 style="margin-top: 20px;">« Quand es-tu né(e) ? »</h3>
+            <p class="answer">« Je suis né(e) le 12 mars 2010. »</p>
+          </div>
+          <button class="audio-btn-slide" onclick="speakSlide('J'ai quinze ans')">🔊 Écoute</button>
+        </div>
+      </section>
+
+      <!-- Slide 20: Profession -->
+      <section class="slide" data-slide-num="20">
+        <div class="slide-content">
+          <h1>💼 Profession</h1>
+          <div class="profession-grid">
+            <div class="prof-item">professeur</div>
+            <div class="prof-item">médecin</div>
+            <div class="prof-item">avocat(e)</div>
+            <div class="prof-item">ingénieur(e)</div>
+            <div class="prof-item">étudiant(e)</div>
+            <div class="prof-item">artiste</div>
+            <div class="prof-item">serveur/serveuse</div>
+            <div class="prof-item">infirmier/ère</div>
+          </div>
+          <div class="info-box" style="margin-top: 20px;">
+            <h3>« Qu'est-ce que tu fais ? »</h3>
+            <p class="answer">« Je suis professeur. »</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 21: Final Challenge -->
+      <section class="slide" data-slide-num="21">
+        <div class="slide-content final-slide">
+          <h1>🎤 Défi final : Présente-toi !</h1>
+          <div class="final-speech">
+            <p>« Bonjour ! Je m'appelle ______. Je viens de ______. J'ai ______ ans. Je suis ______. Mon numéro de téléphone est ______. »</p>
+          </div>
+          <h3 style="margin-top: 30px;">Exemple:</h3>
+          <div class="example-speech">
+            <p>« Bonjour ! Je m'appelle Emma. Je viens de France. J'ai 15 ans. Je suis étudiante. Mon numéro de téléphone est 06 12 34 56 78. »</p>
+          </div>
+          <button class="audio-btn-slide" onclick="speakSlide('Bonjour je m'appelle Emma je viens de France j'ai quinze ans je suis étudiante')">🔊 Écoute l'exemple</button>
+        </div>
+      </section>
+
+      <!-- Slide 22: Congratulations -->
+      <section class="slide" data-slide-num="22">
+        <div class="slide-content slide-final">
+          <div class="congratulations">
+            <h1>🎉 Bravo !</h1>
+            <p>Tu as terminé la révision A1 !</p>
+            <div class="stars">⭐ ⭐ ⭐</div>
+            <p class="final-message">Continue à pratiquer et à parler français ! 🇫🇷</p>
+            <button class="cta-btn" onclick="firstSlide()">Recommencer</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Slide Indicators -->
+    <div class="slide-indicators" id="indicators"></div>
+  </div>
+
+  <script src="slide-deck.js"></script>
+</body>
+</html>
